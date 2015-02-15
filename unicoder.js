@@ -1,32 +1,32 @@
 var unicoder = {
 	'dictionary': {
 		'parenthesized': {
-			'a': '',
-			'b': '',
-			'c': '',
-			'd': '',
-			'e': '',
-			'f': '',
-			'g': '',
-			'h': '',
-			'i': '',
-			'j': '',
-			'k': '',
-			'l': '',
-			'm': '',
-			'n': '',
-			'o': '',
-			'p': '',
-			'q': '',
-			'r': '',
-			's': '',
-			't': '',
-			'u': '',
-			'v': '',
-			'w': '',
-			'x': '',
-			'y': '',
-			'z': '',
+			'A': '',
+			'B': '',
+			'C': '',
+			'D': '',
+			'E': '',
+			'F': '',
+			'G': '',
+			'H': '',
+			'I': '',
+			'J': '',
+			'K': '',
+			'L': '',
+			'M': '',
+			'N': '',
+			'O': '',
+			'P': '',
+			'Q': '',
+			'R': '',
+			'S': '',
+			'T': '',
+			'U': '',
+			'V': '',
+			'W': '',
+			'X': '',
+			'Y': '',
+			'Z': '',
 			'0': '',
 			'1': '',
 			'2': '',
@@ -200,14 +200,12 @@ var unicoder = {
 		var dictionary = this.dictionary[type];
 		var hasCapitals = ( dictionary['a'] && dictionary['A'] );
 
-
 		if( text.length < Object.keys(dictionary).length ) {
 			transitionalTranslate( text, dictionary );
 		} else {
 			bruteForceTranslate( text, dictionary );
 		}
 	},
-
 
 	// Loop through the dictionary, and translate all occurances of items appearing in it.
 	// This should be faster for longer text items. (> 30 characters?)
