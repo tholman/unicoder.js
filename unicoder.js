@@ -172,15 +172,9 @@ function Unicoder() {
 	// Hmm, I wonder if this is the most efficient way to do this?
 	function translate( text, type ) {
 
-		// Gather list of letters
-		var dictionary = this.dictionary[type];
-		var hasCapitals = ( dictionary['a'] && dictionary['A'] );
+		// var hasCapitals = ( dictionary['a'] && dictionary['A'] );
 
-		// if( text.length < Object.keys(dictionary).length ) {
-		// 	transitionalTranslate( text, dictionary );
-		// } else {
-		return bruteForceTranslate( text, dictionary );
-		// }
+		return bruteForceTranslate( text, dictionary[type] );
 	};
 
 	// Returns the types of data that can be translated.
@@ -188,16 +182,21 @@ function Unicoder() {
 		return Object.keys(dictionary);
 	};
 
-	// Loop through the dictionary, and translate all occurances of items appearing in it.
-	// This should be faster for longer text items. (> 30 characters?)
+	// Hi there mystery shopper! Kapow, this algorithm (if you can call it that)
+	// sure is bad. There must (MUST!) be a better way to do this. You should definitely
+	// fork this repository, and try to figure it out!
 	function bruteForceTranslate( text, dictionary ) {
-		return text;
-	};
 
-	// Loop through the text, and translate if they meet a lookup in the dictionary
-	// This should be fastest for shorter text params (< 30 characters?)
-	function transitionalTranslate( text, dictionary ) {
+		var i = 0;
+		var letters = text.split('');
+		for( i; i< letters.length; i++ ) {
+			var letter = letters[i];
+			if( letter in dictionary ) {
+				letters[i] = dictionary[letter];
+			}
+		}
 
+		return letters.join('');;
 	};
 
 	// Generates the dictionary when created.
