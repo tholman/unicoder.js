@@ -1,7 +1,60 @@
 <!doctype html>
 <html>
 	<head>
+        <title> Unicode.js </title>
+        <meta name="description" content="A javascript library, mapping text to unicode equivalents">
+
+        <!-- JS -->
+        <script src='../unicoder.js'></script>
+
+        <!-- CSS -->
+        <link href='./css/styles.css' rel='stylesheet'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
+		<div class="inner">
+			<div class="inner-ear"><!-- Ewww! -->
+				<h1> Unicode.js </h1>
+				<div class="text-area">
+					<input class="text"/>
+				</div>
+				<div class="generated-text-here">
+					<ul></ul>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			// Basic demo code.
+			var unicoder          = new Unicoder();
+			var keys              = unicoder.getDictionaryKeys();
+			var generatedTextArea = document.querySelector('.generated-text-here ul');
+			var textInput         = document.querySelector('input');
+
+			function regenerateText() {
+
+				var text = textInput.value;
+				generatedTextArea.innerHTML = ''; // Wipe current contents.
+				
+				var i = 0;
+				for( i; i < keys.length; i++ ) {
+					renderText(keys[i], unicoder.translate(text, keys[i]));
+				}
+			}
+
+			function renderText( key, text ) {
+				var item = document.createElement('li');
+				var name = document.createElement('div');
+				var translation = document.createElement('div');
+				name.innerHTML = key;
+				translation.innerHTML = text;
+				item.appendChild(name);
+				item.appendChild(translation);
+				generatedTextArea.appendChild(item);
+			}
+
+			textInput.addEventListener('change', regenerateText, false);
+			textInput.addEventListener('keyup', regenerateText, false);
+		</script>
 	</body>
 </html>

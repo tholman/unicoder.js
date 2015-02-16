@@ -1,0 +1,40 @@
+/*
+ * Unicode.js
+ *
+ * MIT licensed
+ * Copyright (C) 2015 Tim Holman, http://tholman.com
+ */
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  padding: 25px; }
+
+.inner {
+  max-width: 1000px;
+  margin: auto;
+  height: 100%;
+  border: 8px solid #222;
+  padding: 20px; }
+
+h1 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 90px;
+  font-weight: 400;
+  color: #222;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.text {
+  font-family: monospace;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%; }
