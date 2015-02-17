@@ -14,17 +14,19 @@ html, body {
 
 body {
   min-height: 100%;
-  padding: 25px; }
+  padding: 20px; }
 
 .inner {
-  max-width: 1000px;
+  width: 100%;
   margin: auto;
-  height: 100%;
+  min-height: 100%;
   border: 8px solid #222;
   padding: 20px; }
 
+.inner-ear {
+  max-width: 900px; }
+
 h1 {
-  text-align: center;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-size: 90px;
@@ -38,3 +40,21 @@ h1 {
   font-size: 18px;
   padding: 10px;
   width: 100%; }
+
+.text-area {
+  margin-bottom: 30px; }
+
+ul {
+  list-style: none;
+  padding-left: 200px; }
+
+li {
+  margin-bottom: 20px; }
+
+li div:nth-child(1) {
+  margin-left: -200px;
+  width: 200px;
+  float: left;
+  font-family: monospace;
+  text-transform: capitalize;
+  font-size: 18px; }

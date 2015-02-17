@@ -156,9 +156,23 @@ function Unicoder() {
 					}
 				}
 
+				// Check for upper case
 				if( item.generate.uppercase ) {
 					for( var j = 0; j < characterOrders.uppercase.length; j++ ) {
 						dictionary[key][characterOrders.uppercase[j]] = unicodePrefix + (item.generate.uppercase + j).toString(16) + unicodeSuffix;
+					}
+				}
+
+				// Check items a second time, and add in a set of upper or lower case items if they don't exist.
+				if( !item.generate.lowercase ) {
+					for( var j = 0; j < characterOrders.lowercase.length; j++ ) {
+						dictionary[key][characterOrders.lowercase[j]] = unicodePrefix + (item.generate.uppercase + j).toString(16) + unicodeSuffix;
+					}
+				}
+
+				if( !item.generate.uppercase ) {
+					for( var j = 0; j < characterOrders.uppercase.length; j++ ) {
+						dictionary[key][characterOrders.uppercase[j]] = unicodePrefix + (item.generate.lowercase + j).toString(16) + unicodeSuffix;
 					}
 				}
 
@@ -171,8 +185,6 @@ function Unicoder() {
 	// Return the text, in the selected unicode format.
 	// Hmm, I wonder if this is the most efficient way to do this?
 	function translate( text, type ) {
-
-		// var hasCapitals = ( dictionary['a'] && dictionary['A'] );
 
 		return bruteForceTranslate( text, dictionary[type] );
 	};
@@ -187,10 +199,15 @@ function Unicoder() {
 	// fork this repository, and try to figure it out!
 	function bruteForceTranslate( text, dictionary ) {
 
+		// Capitals, or Lowercase, or Both?
+		var hasCapitals = ( dictionary['A'] !== undefined );
+		var hasLower    = ( dictionary['a'] !== undefined );
+
 		var i = 0;
 		var letters = text.split('');
 		for( i; i< letters.length; i++ ) {
 			var letter = letters[i];
+
 			if( letter in dictionary ) {
 				letters[i] = dictionary[letter];
 			}
