@@ -21,7 +21,8 @@ body {
   margin: auto;
   min-height: 100%;
   border: 8px solid #222;
-  padding: 20px; }
+  padding: 20px;
+  margin-bottom: 20px; }
 
 .inner-ear {
   max-width: 900px; }
