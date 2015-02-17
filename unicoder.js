@@ -9,131 +9,51 @@ function Unicoder() {
 	var unicodeSuffix = ';'
 
 	var dictionary = {
-		'parenthesized': {
-			'generate': {
-				'lowercase': 9372  //249C
-			},
-		},
 		'circled': {
 			'generate': {
-				'lowercase': 9424, //24D0
-				'uppercase': 9398  //24B6
+				'uppercase': 9398,    //24B6
+				'lowercase': 9424     //24D0
 			},
 		},
 		'negative-circled': {
-			'a': '',
-			'b': '',
-			'c': '',
-			'd': '',
-			'e': '',
-			'f': '',
-			'g': '',
-			'h': '',
-			'i': '',
-			'j': '',
-			'k': '',
-			'l': '',
-			'm': '',
-			'n': '',
-			'o': '',
-			'p': '',
-			'q': '',
-			'r': '',
-			's': '',
-			't': '',
-			'u': '',
-			'v': '',
-			'w': '',
-			'x': '',
-			'y': '',
-			'z': '',
-			'0': '',
-			'1': '',
-			'2': '',
-			'3': '',
-			'4': '',
-			'5': '',
-			'6': '',
-			'7': '',
-			'8': '',
-			'9': ''
+			'generate': {
+				'uppercase': 127312   //1F150
+			},
+			
 		},
 		'squared': {
-			'a': '',
-			'b': '',
-			'c': '',
-			'd': '',
-			'e': '',
-			'f': '',
-			'g': '',
-			'h': '',
-			'i': '',
-			'j': '',
-			'k': '',
-			'l': '',
-			'm': '',
-			'n': '',
-			'o': '',
-			'p': '',
-			'q': '',
-			'r': '',
-			's': '',
-			't': '',
-			'u': '',
-			'v': '',
-			'w': '',
-			'x': '',
-			'y': '',
-			'z': '',
-			'0': '',
-			'1': '',
-			'2': '',
-			'3': '',
-			'4': '',
-			'5': '',
-			'6': '',
-			'7': '',
-			'8': '',
-			'9': ''
+			'generate': {
+				'uppercase': 127280   //1F130
+			},
 		},
 		'negative-squared': {
-			'a': '',
-			'b': '',
-			'c': '',
-			'd': '',
-			'e': '',
-			'f': '',
-			'g': '',
-			'h': '',
-			'i': '',
-			'j': '',
-			'k': '',
-			'l': '',
-			'm': '',
-			'n': '',
-			'o': '',
-			'p': '',
-			'q': '',
-			'r': '',
-			's': '',
-			't': '',
-			'u': '',
-			'v': '',
-			'w': '',
-			'x': '',
-			'y': '',
-			'z': '',
-			'0': '',
-			'1': '',
-			'2': '',
-			'3': '',
-			'4': '',
-			'5': '',
-			'6': '',
-			'7': '',
-			'8': '',
-			'9': ''
+			'generate': {
+				'uppercase': 127344   //1F170
+			},
 		},
+		'script': {
+			'generate': {
+				'uppercase': 120016,  //1D4D0
+				'lowercase': 120042   //1D4EA
+			},
+		},
+		'fraktur': {
+			'generate': {
+				'uppercase': 120172,  //1D56C
+				'lowercase': 120198   //1D586
+			},
+		},
+		'parenthesized': {
+			'generate': {
+				'lowercase': 9372     //249C
+			},
+		},
+		'monospace': {
+			'generate': {
+				'uppercase': 120432,  //1D670
+				'lowercase': 120458   //1D68A
+			}
+		}
 	};
 
 	// Loop through the dictionary, and generate any sets that have generation rules.
