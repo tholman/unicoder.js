@@ -36,6 +36,11 @@
 				var text = textInput.value;
 				generatedTextArea.innerHTML = ''; // Wipe current contents.
 				
+
+				if( text.length <= 0 ) {
+					text = '... Type text in the box above.'; // Dont mess up the way the demo looks.
+				}
+				
 				var i = 0;
 				for( i; i < keys.length; i++ ) {
 					renderText(keys[i], unicoder.translate(text, keys[i]));
