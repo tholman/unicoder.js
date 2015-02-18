@@ -2,7 +2,7 @@
 <html>
 	<head>
         <title> Unicode.js </title>
-        <meta name="description" content="A javascript library, mapping text to unicode equivalents">
+        <meta name="description" content="Unicode.js is a small javascript library, which converts letters of a given text to some of the more artistic unicode alphabets!">
 
         <!-- JS -->
         <script src='../unicoder.js'></script>
@@ -14,15 +14,24 @@
 	<body>
 		<div class="inner">
 			<div class="inner-ear"><!-- Ewww! -->
-				<h1> Unicode.js </h1>
+				<h1> &#x1F164;&#x1F15D;&#x1F158;&#x24D2;&#x24DE;&#x24D3;&#x24D4;.&#x1F179;&#x1F182; </h1>
+				<div class="description-and-stuff">
+					<div class="description-part">
+						Unicode.js is a small javascript library, which converts letters of a given text to some of the more artistic unicode alphabets!
+					</div>
+				</div>
 				<div class="text-area">
-					<input class="text"/>
+					<input class="text" placeholder="Type or paste your text here!"/>
 				</div>
 				<div class="generated-text-here">
 					<ul></ul>
 				</div>
 			</div>
 		</div>
+
+    	<a class="github-link" href="https://github.com/tholman/overscroll" target="_blank">
+    		<img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+    	</a>
 
 		<script>
 			// Basic demo code.
@@ -40,7 +49,7 @@
 				if( text.length <= 0 ) {
 					text = '... Type text in the box above.'; // Dont mess up the way the demo looks.
 				}
-				
+
 				var i = 0;
 				for( i; i < keys.length; i++ ) {
 					renderText(keys[i], unicoder.translate(text, keys[i]));
@@ -58,8 +67,11 @@
 				generatedTextArea.appendChild(item);
 			}
 
+
 			textInput.addEventListener('change', regenerateText, false);
 			textInput.addEventListener('keyup', regenerateText, false);
+
+			regenerateText();
 		</script>
 	</body>
 </html>

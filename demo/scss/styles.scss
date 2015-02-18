@@ -13,24 +13,35 @@ html, body {
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
+	min-width: 910px;
 }
 
 body {
 	min-height: 100%;
 	padding: 20px;
+	background: #111;
 }
 
 .inner {
+	background: #fff;
 	width: 100%;
 	margin: auto;
 	min-height: 100%;
-	border: 8px solid #222;
 	padding: 20px;
 	margin-bottom: 20px;
 }
 
 .inner-ear {
-	max-width: 900px;
+	max-width: 830px;
+	margin: auto;
+}
+
+.description-and-stuff {
+	font-family: monospace, sans-serif;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 25px;
 }
 
 h1 {
@@ -38,8 +49,8 @@ h1 {
 	text-transform: uppercase;
 	font-size: 90px;
 	font-weight: 400;
-	color: #222;
-	margin-top: 10px;
+	color: #111;
+	margin-top: 0px;
 	margin-bottom: 20px;
 }
 
@@ -54,6 +65,13 @@ h1 {
 	margin-bottom: 30px;
 }
 
+.github-link {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
 ul {
 	list-style: none;
 	padding-left: 200px;
@@ -61,6 +79,7 @@ ul {
 
 li {
 	margin-bottom: 20px;
+	font-size: 18px;
 }
 
 li div:nth-child(1) {
@@ -70,4 +89,6 @@ li div:nth-child(1) {
 	font-family: monospace;
 	text-transform: capitalize;
 	font-size: 18px;
+	vertical-align: top;
+	line-height: 28px;
 }
