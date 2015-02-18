@@ -36,9 +36,17 @@ body {
   margin-top: 20px;
   font-size: 18px;
   line-height: 25px; }
+  .description-and-stuff a {
+    color: #777;
+    text-decoration: none; }
+    .description-and-stuff a:hover {
+      text-decoration: underline; }
+  .description-and-stuff .links {
+    margin-top: 20px;
+    margin-bottom: 25px; }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: sans-serif;
   text-transform: uppercase;
   font-size: 90px;
   font-weight: 400;
@@ -55,26 +63,31 @@ h1 {
 .text-area {
   margin-bottom: 30px; }
 
+ul {
+  list-style: none;
+  padding-left: 200px; }
+  ul li {
+    margin-bottom: 20px;
+    font-size: 18px; }
+    ul li div:nth-child(1) {
+      margin-left: -200px;
+      width: 200px;
+      float: left;
+      font-family: monospace;
+      text-transform: capitalize;
+      font-size: 18px;
+      vertical-align: top;
+      line-height: 28px; }
+
+/**
+ * 3rd party stuff
+ */
 .github-link {
   position: fixed;
   top: 0;
   right: 0;
   border: 0; }
 
-ul {
-  list-style: none;
-  padding-left: 200px; }
-
-li {
-  margin-bottom: 20px;
-  font-size: 18px; }
-
-li div:nth-child(1) {
-  margin-left: -200px;
-  width: 200px;
-  float: left;
-  font-family: monospace;
-  text-transform: capitalize;
-  font-size: 18px;
-  vertical-align: top;
-  line-height: 28px; }
+iframe {
+  margin-bottom: -3px;
+  margin-left: 6px; }

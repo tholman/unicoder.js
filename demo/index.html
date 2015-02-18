@@ -9,7 +9,6 @@
 
         <!-- CSS -->
         <link href='./css/styles.css' rel='stylesheet'>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div class="inner">
@@ -17,11 +16,16 @@
 				<h1> &#x1F164;&#x1F15D;&#x1F158;&#x24D2;&#x24DE;&#x24D3;&#x24D4;.&#x1F179;&#x1F182; </h1>
 				<div class="description-and-stuff">
 					<div class="description-part">
-						Unicode.js is a small javascript library, which converts letters of a given text to some of the more artistic unicode alphabets!
+						Unicode.js is a small javascript library, which converts letters of a given text to some of the more artistic unicode alphabets.
+					</div>
+					<div class="links">
+						<a href="http://tholman.com">By Tim Holman</a> &bull;
+    					<a href="http://github.com/tholman/unicode.js">Source & Instructions</a> &bull;
+    					<a href="https://twitter.com/share" class="twitter-share-button" data-text='&#x1F144;&#x1F13D;&#x1F138;&#x1F172;&#x1F17E;&#x1F173;&#x1F174;.&#x24D9;&#x24E2; - turning "text" into "&#x1D599;&#x1D58A;&#x1D59D;&#x1D599;" -' data-via="twholman">Tweet</a>
 					</div>
 				</div>
 				<div class="text-area">
-					<input class="text" placeholder="Type or paste your text here!"/>
+					<input class="text" autofocus placeholder="Type or paste your text here!"/>
 				</div>
 				<div class="generated-text-here">
 					<ul></ul>
@@ -29,7 +33,7 @@
 			</div>
 		</div>
 
-    	<a class="github-link" href="https://github.com/tholman/overscroll" target="_blank">
+    	<a class="github-link" href="https://github.com/tholman/unicode.js" target="_blank">
     		<img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
     	</a>
 
@@ -73,5 +77,8 @@
 
 			regenerateText();
 		</script>
+
+		<!-- Tweet Button -->
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	</body>
 </html>
