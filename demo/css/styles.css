@@ -8,23 +8,23 @@
   box-sizing: border-box; }
 
 html, body {
-  margin: 0px;
+  min-width: 910px;
   padding: 0px;
   height: 100%;
-  min-width: 910px; }
+  margin: 0px; }
 
 body {
+  background: #222;
   min-height: 100%;
-  padding: 20px;
-  background: #111; }
+  padding: 20px; }
 
 .inner {
+  margin-bottom: 20px;
   background: #fff;
-  width: 100%;
-  margin: auto;
   min-height: 100%;
   padding: 20px;
-  margin-bottom: 20px; }
+  margin: auto;
+  width: 100%; }
 
 .inner-ear {
   max-width: 830px;
@@ -32,10 +32,8 @@ body {
 
 .description-and-stuff {
   font-family: monospace, sans-serif;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  font-size: 18px;
-  line-height: 25px; }
+  line-height: 25px;
+  font-size: 18px; }
   .description-and-stuff a {
     color: #777;
     text-decoration: none; }
@@ -48,20 +46,23 @@ body {
 h1 {
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 81px;
   font-weight: 400;
-  color: #111;
-  margin-top: 0px;
-  margin-bottom: 20px; }
+  font-size: 81px;
+  color: #222;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  height: 80px;
+  line-height: 100px; }
 
 .text {
   font-family: monospace;
   font-size: 18px;
-  padding: 10px;
+  padding: 12px;
   width: 100%; }
 
 .text-area {
-  margin-bottom: 30px; }
+  margin-bottom: 25px;
+  margin-top: 20px; }
 
 ul {
   list-style: none;
