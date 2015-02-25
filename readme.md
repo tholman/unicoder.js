@@ -1,6 +1,6 @@
 # Unicode.js
 
-Unicode.js is a small javascript library, which converts letters of a given text to some of the more artistic unicode alphabets.
+Unicode.js is a small javascript library, which converts letters of a given text to some of the more artistic unicode alphabets ⓛⓘⓚⓔ ⓣⓗⓘⓢ, 🅰🅽🅳 🆃🅷🅸🆂. You can try it out live, [here](http://tholman.com/unicode.js).
 
 ### Instructions
 
@@ -47,7 +47,7 @@ You can play around with a small demo [here](http://tholman.com/unicode.js)... b
 
 
 ### License & Acknowledgements
-The main goal here was to make an open source, js version of [this unicode toy](http://www.panix.com/~eli/unicode/convert.cgi?text=hello), its awesome. Also [this](http://rishida.net/tools/conversion/) and [this](http://unicode-table.com/en/) where super useful, helping to understand the unicode system & structure.
+The main goal here was to make an open source, js version of [this unicode toy](http://www.panix.com/~eli/unicode/convert.cgi?text=hello), its awesome. Also [this little tool](http://rishida.net/tools/conversion/) and [this dictionary](http://unicode-table.com/en/) where super useful in helping to understand the unicode system & structure.
 
 The MIT License (MIT)
 
