@@ -2,51 +2,39 @@
 
 Unicode.js is a small javascript library, which converts letters of a given text to some of the more artistic unicode alphabets.
 
+### Demo & Examples
+
+You can play around with a small demo [here](http://tholman.com/unicode.js)... but just for fun, here are some live samples of the results.
+
+| Dictionary       	| Output                                                                                           	|
+|------------------	|--------------------------------------------------------------------------------------------------	|
+| Circled          	| Ⓣⓗⓔⓢⓔ ⓐⓡⓔ ⓓⓘⓕⓕⓔⓡⓔⓝⓣ ⓔⓧⓐⓜⓟⓛⓔⓢ ⓞⓕ ⓤⓝⓘⓒⓞⓓⓔⓡ.ⓙⓢ ⓞⓤⓣⓟⓤⓣⓢ.                                             	|
+| Negative-Circled 	| 🅣🅗🅔🅢🅔 🅐🅡🅔 🅓🅘🅕🅕🅔🅡🅔🅝🅣 🅔🅧🅐🅜🅟🅛🅔🅢 🅞🅕 🅤🅝🅘🅒🅞🅓🅔🅡.🅙🅢 🅞🅤🅣🅟🅤🅣🅢. 	|
+| Squared          	| 🅃🄷🄴🅂🄴 🄰🅁🄴 🄳🄸🄵🄵🄴🅁🄴🄽🅃 🄴🅇🄰🄼🄿🄻🄴🅂 🄾🄵 🅄🄽🄸🄲🄾🄳🄴🅁.🄹🅂                 	|
+| Negative-Squared 	| 🆃🅷🅴🆂🅴 🅰🆁🅴 🅳🅸🅵🅵🅴🆁🅴🅽🆃 🅴🆇🅰🅼🅿🅻🅴🆂 🅾🅵 🆄🅽🅸🅲🅾🅳🅴🆁.🅹🆂                 	|
+| Script           	| 𝓣𝓱𝓮𝓼𝓮 𝓪𝓻𝓮 𝓭𝓲𝓯𝓯𝓮𝓻𝓮𝓷𝓽 𝓮𝔁𝓪𝓶𝓹𝓵𝓮𝓼 𝓸𝓯 𝓾𝓷𝓲𝓬𝓸𝓭𝓮𝓻.𝓳𝓼 𝓸𝓾𝓽𝓹𝓾𝓽𝓼. 	|
+| Fraktur          	| 𝕿𝖍𝖊𝖘𝖊 𝖆𝖗𝖊 𝖉𝖎𝖋𝖋𝖊𝖗𝖊𝖓𝖙 𝖊𝖝𝖆𝖒𝖕𝖑𝖊𝖘 𝖔𝖋 𝖚𝖓𝖎𝖈𝖔𝖉𝖊𝖗.𝖏𝖘 𝖔𝖚𝖙𝖕𝖚𝖙𝖘. 	|
+| Parenthesized    	| ⒯⒣⒠⒮⒠ ⒜⒭⒠ ⒟⒤⒡⒡⒠⒭⒠⒩⒯ ⒠⒳⒜⒨⒫⒧⒠⒮ ⒪⒡ ⒰⒩⒤⒞⒪⒟⒠⒭.⒥⒮ ⒪⒰⒯⒫⒰⒯⒮.                                             	|
+| Monospace        	| 𝚃𝚑𝚎𝚜𝚎 𝚊𝚛𝚎 𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝 𝚎𝚡𝚊𝚖𝚙𝚕𝚎𝚜 𝚘𝚏 𝚞𝚗𝚒𝚌𝚘𝚍𝚎𝚛.𝚓𝚜 𝚘𝚞𝚝𝚙𝚞𝚝𝚜. 	|
+
 ### Instructions
 
 `Unicode.js` is a stand alone, vanilla javascript library, so usage is pretty straight forward. Its a matter of creating a new instance of `Unicoder`, and calling `translate`.
 
 #### JS
 
-`Overscroll.js` is fairly straight forward when it comes to kicking it off, you'll need to create a new instance of overscroll (and include the script in the page), and then bind elements to it once they have been rendered. You can do this with `document.querySelector`.
+`Unicoder.js` is built with a single purpose in mind, so there aren't really a whole lot of different things that can be need to be done with it. It translates the text, that is all. 
 
-```html
-<img class="easter-egg-element" src="./img/awesome-source.png" />
+The most basic example, would be below, translating some text, using a dictionary. (examples above) The dictionary defines the type of unicode characters to be returned.
 
-<script>
-var overscroll = new Overscroll();
-window.onload = function() {
-	overscroll.bindElement(document.querySelector('.easter-egg-element'));
-}
-</script>
+```javascript
+
 ```
 
-There are options, for when the easter egg is at the top, or bottom.
+In the first example, the dictionary is hard coded. `Unicoder.js` also provides a function to get the list of current dictionaries available.
 
-```html
-<img class="easter-egg-element top" src="./img/awesome-source.png" />
-<img class="easter-egg-element bottom" src="./img/awesome-source.png" />
+```javascript
 
-<script>
-var overscroll = new Overscroll();
-window.onload = function() {
-	overscroll.bindElement(document.querySelector('.easter-egg-element.top'), 'top');
-	overscroll.bindElement(document.querySelector('.easter-egg-element.bottom'), 'bottom');
-}
-</script>
-```
-
-And finally, a delta, to show how sensitive the scroll should be, when in the overscroll area... this makes it easier for people to find, but isn't really necessary.
-
-```html
-<img class="easter-egg-element" src="./img/awesome-source.png" />
-
-<script>
-var overscroll = new Overscroll();
-window.onload = function() {
-	overscroll.bindElement(document.querySelector('.easter-egg-element'), 'top', 2);
-}
-</script>
 ```
 
 ### License
