@@ -1,4 +1,4 @@
-# Unicode.js
+# Unicoder.js
 
 Unicode.js is a small javascript library, which converts letters of a given text to some of the more artistic unicode alphabets ⓛⓘⓚⓔ ⓣⓗⓘⓢ, 🅰🅽🅳 🆃🅷🅸🆂. You can try it out live, [here](http://tholman.com/unicode.js).
 
