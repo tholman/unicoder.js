@@ -45,6 +45,17 @@ You can play around with a small demo [here](http://tholman.com/unicoder.js)... 
 | Parenthesized    	| ⒯⒣⒠⒮⒠ ⒜⒭⒠ ⒟⒤⒡⒡⒠⒭⒠⒩⒯ ⒠⒳⒜⒨⒫⒧⒠⒮ ⒪⒡ ⒰⒩⒤⒞⒪⒟⒠⒭.⒥⒮ ⒪⒰⒯⒫⒰⒯⒮.                                             	|
 | Monospace        	| 𝚃𝚑𝚎𝚜𝚎 𝚊𝚛𝚎 𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝 𝚎𝚡𝚊𝚖𝚙𝚕𝚎𝚜 𝚘𝚏 𝚞𝚗𝚒𝚌𝚘𝚍𝚎𝚛.𝚓𝚜 𝚘𝚞𝚝𝚙𝚞𝚝𝚜. 	|
 
+### In the wild
+
+The fun part about this, is that almost all platforms accept unicode text, so next time you can add a little more spice to your social with the [demo](http://tholman.com/unicoder.js), or work it into your site for some insane reason!
+
+Twitter works.
+![Unicode on twitter](https://i.imgur.com/hflMYyt.png "Twitter showing unicode")
+
+Tumblr too...
+![Unicode on tumblr](http://i.imgur.com/EImCdt0.png "Tumblr showing unicode")
+
+Most of everything does.
 
 ### License & Acknowledgements
 The main goal here was to make an open source, js version of [this unicode toy](http://www.panix.com/~eli/unicode/convert.cgi?text=hello), its awesome. Also [this little tool](http://rishida.net/tools/conversion/) and [this dictionary](http://unicode-table.com/en/) where super useful in helping to understand the unicode system & structure.
