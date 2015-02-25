@@ -1,10 +1,10 @@
 # Unicoder.js
 
-Unicode.js is a small javascript library, which converts letters of a given text to some of the more artistic unicode alphabets ⓛⓘⓚⓔ ⓣⓗⓘⓢ, 🅰🅽🅳 🆃🅷🅸🆂. You can try it out live, [here](http://tholman.com/unicode.js).
+Unicoder.js is a small javascript library, which converts letters of a given text to some of the more artistic unicode alphabets ⓛⓘⓚⓔ ⓣⓗⓘⓢ, 🅰🅽🅳 🆃🅷🅸🆂. You can try it out live, [here](http://tholman.com/unicoder.js).
 
 ### Instructions
 
-`Unicode.js` is a stand alone, vanilla javascript library, so usage is pretty straight forward. Its a matter of creating a new instance of `Unicoder`, and calling `translate`.
+`Unicoder.js` is a stand alone, vanilla javascript library, so usage is pretty straight forward. Its a matter of creating a new instance of `Unicoder`, and calling `translate`.
 
 #### JS
 
@@ -32,7 +32,7 @@ console.log( unicoder.getDictionaryKeys() );
 
 ### Demo & Examples
 
-You can play around with a small demo [here](http://tholman.com/unicode.js)... but just for fun, here are some live samples of the results.
+You can play around with a small demo [here](http://tholman.com/unicoder.js)... but just for fun, here are some live samples of the results.
 
 | Dictionary       	| Output                                                                                           	|
 |------------------	|--------------------------------------------------------------------------------------------------	|
