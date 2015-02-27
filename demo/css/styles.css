@@ -19,12 +19,12 @@ body {
   padding: 20px; }
 
 .inner {
-  margin-bottom: 20px;
   background: #fff;
   min-height: 100%;
   padding: 20px;
   margin: auto;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
 
 .inner-ear {
   max-width: 830px;
@@ -83,6 +83,20 @@ ul {
 /**
  * 3rd party stuff
  */
+.links {
+  font-family: monospace;
+  color: #222;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  width: 130px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.7);
+  line-height: 22px; }
+  .links span, .links a {
+    display: block;
+    color: inherit; }
+
 .github-link {
   position: fixed;
   top: 0;
@@ -90,5 +104,4 @@ ul {
   border: 0; }
 
 iframe {
-  margin-bottom: -3px;
-  margin-left: 6px; }
+  margin-top: 5px; }

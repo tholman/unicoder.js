@@ -140,7 +140,6 @@ function Unicoder() {
 	generateDictionary();
 	return {
 		translate: translate,
-		dictionary: dictionary,
 		getDictionaryKeys: getDictionaryKeys
 	}
 }
