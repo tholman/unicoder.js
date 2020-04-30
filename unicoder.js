@@ -9,6 +9,12 @@ function Unicoder() {
 	var unicodeSuffix = ';'
 
 	var dictionary = {
+		'bold': {
+			'generate': {
+				'uppercase': 65313,
+				'lowercase': 65345,
+			},
+		},
 		'circled': {
 			'generate': {
 				'uppercase': 9398,    //24B6
