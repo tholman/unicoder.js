@@ -9,10 +9,34 @@ function Unicoder() {
 	var unicodeSuffix = ';'
 
 	var dictionary = {
+		'italic sans': {
+			'generate': {
+				'uppercase': 120328,
+				'lowercase': 120354,
+			},
+		},
+		'bold sans': {
+			'generate': {
+				'uppercase': 120276,
+				'lowercase': 120302,
+			},
+		},
 		'bold': {
 			'generate': {
-				'uppercase': 65313,
-				'lowercase': 65345,
+				'uppercase': 119808,
+				'lowercase': 119834,
+			},
+		},
+		'bold italic sans': {
+			'generate': {
+				'uppercase': 120380,
+				'lowercase': 120406,
+			},
+		},
+		'bold italic': {
+			'generate': {
+				'uppercase': 119912,
+				'lowercase': 119938,
 			},
 		},
 		'circled': {
